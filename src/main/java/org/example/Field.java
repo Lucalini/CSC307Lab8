@@ -1,3 +1,9 @@
+/**
+ * displays a green screen for the game to be set on
+ *
+ * @author Logan Lumetta
+ */
+
 package org.example;
 
 import javax.swing.*;
@@ -13,10 +19,10 @@ public class Field extends JFrame {
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        GamePanel panel = new GamePanel(game);
-        panel.setBackground(new Color(149, 229, 149));
+
+        this.setBackground(new Color(149, 229, 149));
         setLayout(new BorderLayout());
-        add(panel, BorderLayout.CENTER);
+        add(this, BorderLayout.CENTER);
 
         setVisible(true);
     }
